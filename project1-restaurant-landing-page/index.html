@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">SpiceHub</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" 
+        class="d-flex align-items-center text-center text-white"
+        style="
+            height: 100vh;
+            background-image: url('./assets/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #222;
+        ">
+        
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Welcome to SpiceHub</h1>
+            <p class="lead mb-4">Experience Fine Dining with Authentic Taste</p>
+
+            <a href="#menu" class="btn btn-warning btn-lg me-2">View Menu</a>
+            <a href="#contact" class="btn btn-light btn-lg">Reserve Table</a>
+        </div>
+
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- TEXT -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">About Us</h2>
+                    <p class="mb-3">
+                        At <strong>SpiceHub</strong>, we believe great food begins with passion,
+                        fire, and authenticity. Our chefs bring the finest ingredients to life over 
+                        open flames, crafting flavours that celebrate the essence of modern grilling.
+                    </p>
+                    <p>
+                        Whether it’s the smoky aroma, the sizzling grill, or the burst of bold spices —
+                        every plate at SpiceHub delivers a mouthwatering experience you'll never forget.
+                    </p>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/about.jpg" alt="About Image" class="img-fluid rounded shadow">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENU SECTION ===== -->
+    <section id="menu" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">Our Menu</h2>
+
+            <div class="row g-4">
+
+                <!-- MENU ITEM 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 menu-card">
+                        <img src="assets/menu1.jpg" class="card-img-top menu-img" alt="Menu Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Grilled Chicken</h5>
+                            <p class="card-text">Juicy grilled chicken infused with smoky spices and served hot.</p>
+                            <p class="fw-semibold text-danger">₹349</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENU ITEM 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 menu-card">
+                        <img src="assets/menu2.jpg" class="card-img-top menu-img" alt="Menu Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">BBQ Wings</h5>
+                            <p class="card-text">Crispy wings dipped in a rich BBQ glaze with a smoky finish.</p>
+                            <p class="fw-semibold text-danger">₹299</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENU ITEM 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 menu-card">
+                        <img src="assets/menu3.jpg" class="card-img-top menu-img" alt="Menu Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Smoked Kebabs</h5>
+                            <p class="card-text">Flavor-packed kebabs slow-cooked to perfection on charcoal.</p>
+                            <p class="fw-semibold text-danger">₹399</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            
+            <h2 class="text-center fw-bold mb-5">Gallery</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-img">
+                        <img src="assets/gallery1.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-img">
+                        <img src="assets/gallery2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-img">
+                        <img src="assets/gallery3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-img">
+                        <img src="assets/gallery4.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-img">
+                        <img src="assets/gallery5.jpg" class="img-fluid rounded shadow" alt="Gallery Image 5">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-img">
+                        <img src="assets/gallery6.jpg" class="img-fluid rounded shadow" alt="Gallery Image 6">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">What Our Customers Say</h2>
+
+            <div class="row g-4">
+
+                <!-- REVIEW 1 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center shadow-sm border-0">
+                        <img src="assets/review1.jpg" class="rounded-circle mx-auto mb-3 review-img" alt="Reviewer 1">
+                        <h5 class="fw-bold">Rahul Singh</h5>
+                        <p class="text-warning mb-2">★★★★★</p>
+                        <p>"One of the best grilled dishes I've ever tasted! The flavors were absolutely stunning."</p>
+                    </div>
+                </div>
+
+                <!-- REVIEW 2 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center shadow-sm border-0">
+                        <img src="assets/review2.jpg" class="rounded-circle mx-auto mb-3 review-img" alt="Reviewer 2">
+                        <h5 class="fw-bold">Arjun Mehta</h5>
+                        <p class="text-warning mb-2">★★★★★</p>
+                        <p>"Amazing place! Perfect ambience, great service, and the BBQ wings were heavenly."</p>
+                    </div>
+                </div>
+
+                <!-- REVIEW 3 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center shadow-sm border-0">
+                        <img src="assets/review3.jpg" class="rounded-circle mx-auto mb-3 review-img" alt="Reviewer 3">
+                        <h5 class="fw-bold">Priya Sharma</h5>
+                        <p class="text-warning mb-2">★★★★★</p>
+                        <p>"Loved the smoky kebabs! Perfectly cooked and full of rich flavors. Highly recommended."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">Contact Us</h2>
+
+            <div class="row g-4">
+
+                <!-- CONTACT DETAILS -->
+                <div class="col-md-6">
+                    <div class="p-4 shadow-sm bg-white rounded">
+
+                        <h4 class="fw-bold mb-3">Get in Touch</h4>
+
+                        <p class="mb-2"><strong>📍 Address:</strong><br>
+                            SpiceHub Restaurant, Gachibowli, Hyderabad</p>
+
+                        <p class="mb-2"><strong>📞 Phone:</strong><br>
+                            +91 98494 31135</p>
+
+                        <p class="mb-2"><strong>📧 Email:</strong><br>
+                            spicehub@gmail.com</p>
+
+                        <p class="mb-3"><strong>⏰ Working Hours:</strong><br>
+                            Mon – Sun : 11:00 AM – 11:00 PM</p>
+
+                        <!-- MAP -->
+                        <div class="ratio ratio-16x9 rounded shadow-sm">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.790986770934!2d78.35788557473554!3d17.44008058344952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c2d63f9d89%3A0xcfd0ffba09ddfbcd!2sGachibowli%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1700000000000" 
+                                allowfullscreen 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="col-md-6">
+                    <div class="p-4 shadow-sm bg-white rounded">
+
+                        <h4 class="fw-bold mb-3">Send Us a Message</h4>
+
+                        <form>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Your Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control" rows="4" placeholder="Type your message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning w-100 fw-bold">Send Message</button>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+<footer id="footer" class="text-white pt-5 pb-3">
+
+    <div class="container">
+
+        <div class="row text-center text-md-start">
+
+            <!-- BRAND -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold">SpiceHub</h4>
+                <p class="small">
+                    Bringing bold flavors, sizzling grills, and unforgettable dining experiences.
+                </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- SOCIAL ICONS -->
+            <div class="col-md-4 mb-4 text-md-end text-center">
+                <h5 class="fw-bold mb-3">Follow Us</h5>
+
+                <a href="#" class="footer-icon me-3">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-icon me-3">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-icon me-3">
+                    <i class="bi bi-twitter"></i>
+                </a>
+
+                <a href="#" class="footer-icon">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <p class="text-center small mb-0">
+            © 2025 SpiceHub Restaurant | All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,165 @@
+/* ================================
+   MENU IMAGE FIX
+================================ */
+.menu-img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu-card .card-body {
+    min-height: 180px;
+}
+
+/* ================================
+   GALLERY HOVER ZOOM EFFECT
+================================ */
+.gallery-img img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ================================
+   SMOOTH SCROLLING
+================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================================
+   GLOBAL FONT
+================================ */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================================
+   TESTIMONIALS SECTION STYLING
+================================ */
+
+/* Reviewer images */
+.review-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f8f9fa;
+}
+
+/* Testimonial cards */
+#testimonials .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+#testimonials .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 28px rgba(0,0,0,0.18);
+}
+
+/* Stars */
+#testimonials p.text-warning {
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+/* ================================
+   CONTACT SECTION STYLING
+================================ */
+
+/* Contact cards */
+#contact .shadow-sm {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+#contact .shadow-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Map iframe rounding */
+#contact iframe {
+    border-radius: 10px;
+}
+
+/* Form fields styling */
+#contact input,
+#contact textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #ffa500;
+    box-shadow: 0 0 5px rgba(255,165,0,0.5);
+}
+
+/* Button styling */
+#contact button {
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+/* Make headings bold & centered across all sections */
+section h2 {
+    font-weight: 700;
+}
+
+/* ================================
+   PREMIUM FOOTER STYLING
+================================ */
+#footer {
+    background-color: #111;
+    color: #bbb;
+}
+
+#footer h4, 
+#footer h5 {
+    color: #f8f9fa;
+}
+
+#footer p {
+    color: #ccc;
+}
+
+/* Quick links */
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+/* Social Icons */
+.footer-icon {
+    font-size: 1.5rem;
+    color: #bbb;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #ffc107;
+    transform: translateY(-3px);
+}
+
+/* Divider */
+#footer hr {
+    opacity: 0.2;
+    border-color: #444;
+}
